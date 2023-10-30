@@ -1,9 +1,8 @@
 function soon() {
     a=document.getElementsByTagName("a")
     for (var i=0;i<a.length;i++){
-        if(a[i].href=="soon.html"){
-            console.log(a[i])
-            a[i].style.backgroundColor="red"
+        if(a[i].getAttribute('href')=="soon.html"){
+            a[i].style.backgroundColor="rgba(255, 96, 96, 0.776)"
         }
     }
 }
