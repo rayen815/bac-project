@@ -2,29 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='style/istyle.css'>
     <title>Document</title>
-    <style>
-        fieldset{
-            text-align: center;
-        }
-        input{
-            margin-top: 20px;
-        }
-        form{
-            height: auto;
-        }
-    </style>
 </head>
 <body>
-    <form action="">
+    <form method="POST" onsubmit="return verif()">
         <fieldset>
-            <label>name:</label><input type="text"><br>
-            <label>phone number:</label><input type="tel" name="" id=""><br>
-            <label>email:</label><input type="email" name="" id=""><br>
-            <label>password:</label><input type="password" name="" id=""><br>
-            <input type="submit"><input type="reset">
+            <label id="">civibilite: </label> Monsieu<input name="gender" id="m" type="radio" >Madame<input name="gender" id="f" type="radio" ><br>
+            <label id="">username:</label><input name="" id="np" type="text" ><br>
+            <label id="">phone number:</label><input name="" id="tel" type="number" ><br>
+            <label id="">email:</label><input name="" id="em" type="email" ><br>
+            <label id="">email confirmation:</label><input name="" id="cem" type="email" ><br>
+            <label for="">Mot de passe</label><input id="pass" type="password"><br>
+            <label for="">Cofirmation de MP</label><input id="cpass" type="password"><br>
+
+            <label id="">ville:</label><select id="ville">
+                <option>choisir une ville</option>
+                <option>rafraf</option>
+                <option>rasjebel</option>
+                <option>ghar el melh</option>
+
+            </select><div id="vill"><input value="ajouter" id="bajout" type="button" >
+                <input name="" id="ajville" type="text" ></div><br>
+
+                <div id="send"><div><h4>j'accepte les termes et conditions generales:</h4>
+                <input type="checkbox"><br></div><input onclick="verif()" type="submit"><input type="reset"></div>
         </fieldset>
     </form>
+    <div id="subres"><a href="login.html"><input type="button" value="login"></a>
+        <a href="index.html"><input type="button" value="back"></a></div>
+    <script src="script/signup.js"></script>
 </body>
 </html>
