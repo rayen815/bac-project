@@ -10,27 +10,31 @@
 <body>
     <form method="POST" onsubmit="return verif()">
         <fieldset>
-            <label id="">civibilite: </label> Monsieu<input name="gender" id="m" type="radio" >Madame<input name="gender" id="f" type="radio" ><br>
+            <label id="">gender: </label> Male<input name="gender" id="m" type="radio" >female<input name="gender" id="f" type="radio" ><br>
             <label id="">username:</label><input name="" id="np" type="text" ><br>
             <label id="">phone number:</label><input name="" id="tel" type="number" ><br>
             <label id="">email:</label><input name="" id="em" type="email" ><br>
             <label id="">email confirmation:</label><input name="" id="cem" type="email" ><br>
-            <label for="">Mot de passe</label><input id="pass" type="password"><br>
-            <label for="">Cofirmation de MP</label><input id="cpass" type="password"><br>
+            <label for="">password:</label><input id="pass" type="password"><br>
+            <label for="">password confirmation:</label><input id="cpass" type="password"><br>
 
-            <label id="">ville:</label><select id="ville">
-                <option>choisir une ville</option>
+            <label id="">city:</label><select id="ville">
+                <option>choose your city</option>
                 <option>rafraf</option>
                 <option>rasjebel</option>
                 <option>ghar el melh</option>
 
-            </select><div id="vill"><input value="ajouter" id="bajout" type="button" >
+            </select><div id="vill"><input value="add" id="bajout" type="button" >
                 <input name="" id="ajville" type="text" ></div><br>
 
-                <div id="send"><div><h4>j'accepte les termes et conditions generales:</h4>
-                <input type="checkbox"><br></div><input onclick="verif()" type="submit"><input type="reset"></div>
+                <div id="send"><div><h4><a href="#">i accept the general terms and conditions</a>:</h4>
+                <input id="chdd" onclick="chk();" type="checkbox"></div><br>
+                <div id="error"></div><input value="signup!" id="sub" onclick="verif()" type="submit">
+                <input value="reset" onclick="chk();" type="reset"></div>
+                
         </fieldset>
     </form>
+    
     <div id="subres"><a href="login.html"><input type="button" value="login"></a>
         <a href="index.html"><input type="button" value="back"></a></div>
     <script src="script/signup.js"></script>
