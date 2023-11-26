@@ -1,5 +1,6 @@
 body{
     background-color: rgb(255, 252, 176);
+    font-family: 'Times New Roman', Times, serif;
 }
 
 nav{
@@ -9,9 +10,11 @@ nav{
     margin-bottom: 4px;
     background-color: rgb(8, 8, 117);
     height: 80px;
+    width: 100%;
 
 }
 nav input[type="button"]{
+    font-family: 'Times New Roman', Times, serif;
     margin-left: 5%;
     display: inline-block;
     border: none;
@@ -30,6 +33,7 @@ nav input[type="button"]:hover{
     width: 105px;
 }
 h2{
+    font-family: 'Times New Roman', Times, serif;
     display: inline-block;
     color: beige;
     margin-bottom: 10px;
@@ -42,6 +46,7 @@ h2{
     float:left;
 }
 #sec{
+    font-family: 'Times New Roman', Times, serif;
     width: 15%;
     height: 600px;
     color: #fff;
@@ -53,6 +58,7 @@ h2{
 }
 
 .dropbtn {
+    font-family: 'Times New Roman', Times, serif;
     margin-bottom: 20px;
     border: none;
     box-shadow: 5px 5px 5px beige;
@@ -100,7 +106,7 @@ h2{
 
 
 #source{
-    width: 82%;
+    width: 80%;
     height: 600px;
     overflow: hidden;
     float: left;
@@ -114,6 +120,7 @@ footer{
     padding-left: 620px;
     border-top: 10px solid rgb(8, 8, 117);
     overflow: hidden;
+    width: 100%;
 }
 footer img{
     width: 40px;
@@ -123,4 +130,7 @@ footer img{
 }
 footer img:hover{
     transform: rotate3d(0,1,0,360deg);
+}
+#counter{
+    float:left;
 }
