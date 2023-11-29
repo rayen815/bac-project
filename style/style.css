@@ -253,7 +253,7 @@ nav input{
 }
 footer{
     padding-left: 620px;
-    border-top: 10px solid rgb(21, 21, 26);
+    border-top: 10px solid rgba(0,0,0,0.15);
     overflow: hidden;
     width: 100%;
 }
