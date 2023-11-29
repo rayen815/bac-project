@@ -8,105 +8,93 @@
 </head>
 <body onload="soon();">
     <nav>
-        <img id="logo" src="images/logo.png"><h2> bac info 
-        <a href="home.html" target="display"></h2><input value="home" type="button" id="home"></a>
-        <a href="signup.html"><input value="signin" type="button" id="sign"></a>
-        <input value="contact us" type="button" id="con">
-    </nav>
+        <div class="wrapper">
+          <div class="logo"><a href="#">bac info</a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a href="home.html" target="display">Home</a></li>
+            <li>
+              <a href="#" class="desktop-item">summaries</a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">summaries</label>
+              <ul class="drop-menu">
+                <li><a href="#">math</a>
+                    <ul class="secondary-drop-menu">
+                        <li><a href="summary/math/Limitefonction.pdf" target="display">limite de fonction</a></li>
+                        <li><a href="summary/math/cotinuete.pdf" target="display">continuité</a></li>
+                        <li><a href="summary/math/complexe.pdf" target="display">complexe</a></li>
+                        <li><a href="summary/math/equationc.pdf" target="display">equation dans C</a></li>
+                        <li><a href="summary/math/derivabilite.pdf" target="display">derivabilite</a></li>
+                        <li><a href="summary/math/systemelineaire.pdf" target="display">system d'equation <br>lineaire</a></li>
 
-    <div id="sec"> 
-        
-        <div class="dropdown">
-            <input value="math" type="button" class="dropbtn">
-            <div class="dropdown-content">
-                <a href="summary/math/Limitefonction.pdf" target="display">limite de fonction</a>
-                <a href="summary/math/cotinuete.pdf" target="display">continuité</a>
-                <a href="summary/math/complexe.pdf" target="display">complexe</a>
-                <a href="summary/math/equationc.pdf" target="display">equation dans C</a>
-                <a href="summary/math/derivabilite.pdf" target="display">derivabilite</a>
-                <a href="summary/math/systemelineaire.pdf" target="display">system d'equation <br>lineaire</a>
-            </div>
+                    </ul>
+                </li>
+                <li><a href="#">programation</a>
+                    <ul class="secondary-drop-menu">
+                        <li><a href="summary/prog/basics.pdf" target="display">base</a></li>
+                        <li><a href="summary/prog/serie1.pdf" target="display">serie 1</a></li>
+                        <li><a href="summary/prog/fichier.pdf" target="display">les fichier</a></li>
+                        <li><a href="summary/prog/serie2.pdf" target="display">serie 2</a></li>
+                        <li><a href="summary/prog/fichiertexte.pdf" target="display">les fichier texte</a></li>
+                        <li><a href="summary/prog/serie3.pdf" target="display">serie 3</a></li>
+                        <li><a href="summary/prog/recursive.pdf" target="display">la recursivite</a></li>
+                        <li><a href="soon.html">serie 4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">physics</a>
+                    <ul class="secondary-drop-menu">
+                        <li><a href="summary/physics/condensateur.pdf" target="display">la condensateur</a></li>
+                        <li><a href="summary/physics/dipoleRC.pdf" target="display">le dipole RC</a></li>
+                        <li><a href="soon.html">le dipole RL</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">S.T.I</a>
+                    <ul class="secondary-drop-menu">
+                        <li><a href="summary/sti/annex.pdf" target="display">Annex</a></li>
+                        <li><a href="summary/sti/htmlcsstp1.pdf" target="display">HTML & CSS <br>TP 1</a></li>
+                        <li><a href="summary/sti/jsserie1.pdf" target="display">JavaScript serie 1</a></li>
+                        <li><a href="summary/sti/jsserie2.pdf" target="display">JavaScript serie 2</a></li>
+                        <li><a href="summary/sti/apps.pdf" target="display">JavaScript apps</a></li>
+                        <li><a href="summary/sti/bsserie1.pdf" target="display">base de donnees <br>serie 1</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Deutsch</a>
+                    <ul class="secondary-drop-menu">
+                        <li><a href="summary/german/kap1.pdf" target="display">kapitel 1</a></li>
+                        <li><a href="soon.html">kapitel 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">عربية</a>
+                    <ul class="secondary-drop-menu">
+                        <li><a href="soon.html">محور 1</a></li>
+                        <li><a href="soon.html">محور 2</a></li>
+                        <li><a href="soon.html">محور 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">فلسفة</a>
+                    <ul class="secondary-drop-menu">
+                        <li><a href="soon.html">الانية و الغيرية</a></li>
+                        <li><a href="soon.html">الخصوصية و الكونية</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">francais</a>
+                    <ul class="secondary-drop-menu">
+                        <li><a href="soon.html">module 1</a></li>
+                        <li><a href="soon.html">module 2</a></li>
+                        <li><a href="soon.html">module 3</a></li>
+                    </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="signup.html">sign up</a></li>
+            <li><a href="soon.html">contact us</a></li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
         </div>
-        <div class="dropdown">
-            <input value="programation" type="button" class="dropbtn" id="">
-            <div class="dropdown-content">
-                <a href="summary/prog/basics.pdf" target="display">base</a>
-                <a href="summary/prog/serie1.pdf" target="display">serie 1</a>
-                <a href="summary/prog/fichier.pdf" target="display">les fichier</a>
-                <a href="summary/prog/serie2.pdf" target="display">serie 2</a>
-                <a href="summary/prog/fichiertexte.pdf" target="display">les fichier texte</a>
-                <a href="summary/prog/serie3.pdf" target="display">serie 3</a>
-                <a href="summary/prog/recursive.pdf" target="display">la recursivite</a>
-                <a href="soon.html">serie 4</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <input value="physics" type="button" class="dropbtn" id="">
-            <div class="dropdown-content">
-                <a href="summary/physics/condensateur.pdf" target="display">la condensateur</a>
-                <a href="summary/physics/dipoleRC.pdf" target="display">le dipole RC</a>
-                <a href="soon.html">le dipole RL</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <input value="S.T.I" type="button" class="dropbtn" id="">
-            <div class="dropdown-content">
-                <a href="summary/sti/annex.pdf" target="display">Annex</a>
-                <a href="summary/sti/htmlcsstp1.pdf" target="display">HTML & CSS <br>TP 1</a>
-                <a href="summary/sti/jsserie1.pdf" target="display">JavaScript serie 1</a>
-                <a href="summary/sti/jsserie2.pdf" target="display">JavaScript serie 2</a>
-                <a href="summary/sti/apps.pdf" target="display">JavaScript apps</a>
-                <a href="summary/sti/bsserie1.pdf" target="display">base de donnees <br>serie 1</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <input value="Deutsch" type="button" class="dropbtn" id="">
-            <div class="dropdown-content">
-                <a href="summary/german/kap1.pdf" target="display">kapitel 1</a>
-                <a href="soon.html">kapitel 2</a>
-                <a href="soon.html">kapitel 3</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <input value="española" type="button" class="dropbtn" id="">
-            <div class="dropdown-content">
-                <a href="soon.html">capítulo 1</a>
-                <a href="soon.html">capítulo 2</a>
-                <a href="soon.html">capítulo 3</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <input value="italiana" type="button" class="dropbtn" id="">
-            <div class="dropdown-content">
-                <a href="soon.html">capitolo 1</a>
-                <a href="soon.html">capitolo 2</a>
-                <a href="soon.html">capitolo 3</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <input value="عربية" type="button" class="dropbtn" id="">
-            <div class="dropdown-content">
-                <a href="soon.html">محور 1</a>
-                <a href="soon.html">محور 2</a>
-                <a href="soon.html">محور 3</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <input value="فلسفة" type="button" class="dropbtn" id="">
-            <div class="dropdown-content">
-                <a href="soon.html">الانية و الغيرية</a>
-                <a href="soon.html">الخصوصية و الكونية</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <input value="francais" type="button" class="dropbtn" id="">
-            <div class="dropdown-content">
-                <a href="soon.html">module 1</a>
-                <a href="soon.html">module 2</a>
-                <a href="soon.html">module 3</a>
-            </div>
-        </div>
-    </div>
+      </nav>
+    
     <div id="source">
         <iframe name="display" src="home.html" loading="lazy" title="PDF-file">
 

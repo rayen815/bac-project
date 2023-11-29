@@ -1,42 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' type='text/css' media='screen' href='style/istyle.css'>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Login / Sign Up Form UI</title>
+  <link rel="stylesheet" href="signup/style.css">
+
 </head>
 <body>
-    <form method="POST" onsubmit="return verif()">
-        <fieldset>
-            <label id="">gender: </label> Male<input name="gender" id="m" type="radio" >female<input name="gender" id="f" type="radio" ><br>
-            <label id="">username:</label><input name="" id="np" type="text" ><br>
-            <label id="">phone number:</label><input name="" id="tel" type="number" ><br>
-            <label id="">email:</label><input name="" id="em" type="email" ><br>
-            <label id="">email confirmation:</label><input name="" id="cem" type="email" ><br>
-            <label for="">password:</label><input id="pass" type="password"><br>
-            <label for="">password confirmation:</label><input id="cpass" type="password"><br>
 
-            <label id="">city:</label><select id="ville">
-                <option>choose your city</option>
-                <option>rafraf</option>
-                <option>rasjebel</option>
-                <option>ghar el melh</option>
-
-            </select><div id="vill"><input value="add" id="bajout" type="button" >
-                <input name="" id="ajville" type="text" ></div><br>
-
-                <div id="send"><div><h4><a href="#">i accept the general terms and conditions</a>:</h4>
-                <input id="chdd" onclick="chk();" type="checkbox"></div><br>
-                <div id="error"></div><input value="signup!" id="sub" onclick="verif()" type="submit">
-                <input value="reset" onclick="chk();" type="reset"></div>
-                
-        </fieldset>
+<div class="container">
+  <div class="message signup">
+    <div class="btn-wrapper">
+      <button class="button" id="signup">Sign Up</button>
+      <button class="button" id="login"> Login</button>
+    </div>
+  </div>
+  <div class="form form--signup">
+    <div class="form--heading">Welcome! Sign Up</div>
+    <form autocomplete="off">
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <button class="button">Sign Up</button>
     </form>
-    
-    <div id="subres"><a href="login.html"><input type="button" value="login"></a>
-        <a href="index.html"><input type="button" value="back"></a></div>
-    <script src="script/signup.js"></script>
+  </div>
+  <div class="form form--login">
+    <div class="form--heading">Welcome back! </div>
+    <form autocomplete="off">
+      <input type="text" placeholder="Name">
+      <input type="password" placeholder="Password">
+      <button class="button">Login</button>
+    </form>
+  </div>
+</div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script  src="signup/script.js"></script>
+
 </body>
 </html>
