@@ -94,6 +94,7 @@
                 </li>
               </ul>
             </li>
+            <li><a href="soon.html">tools</a></li>
             <li><a href="signup.html">sign up</a></li>
             <li><a href="soon.html">contact us</a></li>
           </ul>
@@ -112,5 +113,14 @@
         <a href="https://www.instagram.com/rayen.b.youssef/"><img src="images/insta.png" alt="insta"></a><br>
     </footer>
 </body>
-<script src="script/index.js"></script>
+<script src="script/index.js">
+    function soon() {
+        a=document.getElementsByTagName("a")
+        for (var i=0;i<a.length;i++){
+            if(a[i].getAttribute('href')=="soon.html"){
+                a[i].style.backgroundColor="rgba(255, 96, 96, 0.776)"
+            }
+        }
+    }
+</script>
 </html>
