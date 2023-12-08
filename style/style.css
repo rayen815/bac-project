@@ -287,6 +287,10 @@ nav input{
     transition: all 0.3s ease;
   }
   
+  #sidebar-toggle{
+    display: none;
+  }
+
   /* Show the sidebar when checkbox is checked */
   #sidebar-toggle:checked + #sidebar-label + .sidebar {
     left: 0;
