@@ -294,6 +294,9 @@ nav input{
   #sidebar-toggle:checked +#sidebar-label{
     left:200px
   }
+  b{
+    padding-left: 10px;
+  }
 #source{
     margin-top: 70px;
     width: 100%;
