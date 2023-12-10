@@ -103,7 +103,7 @@ nav .wrapper{
   top: 10px;
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 720px) {
   .wrapper .btn{
     display: block;
   }
@@ -190,6 +190,7 @@ nav .wrapper{
   .content .row header{
     font-size: 19px;
   }
+  
 }
 nav input{
   display: none;
@@ -241,7 +242,14 @@ nav input{
     color: #f2f2f2;
     text-decoration: none;
   }
-
+  @media screen and (min-width: 720px) {
+    .sidebar{
+      display: none;
+    }
+    #sidebar-label{
+      display: none;
+    }
+  }
 
   .sidebar {
     margin-top: 70px;
@@ -275,7 +283,7 @@ nav input{
   #sidebar-label {
     width: 50px;
     margin-top: 70px;
-    display: block;
+    
     padding: 10px 15px;
     background-color: #333;
     color: #fff;
